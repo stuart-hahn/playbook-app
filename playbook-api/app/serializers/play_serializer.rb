@@ -1,4 +1,6 @@
 class PlaySerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :setup
+
+  belongs_to :formation
 end

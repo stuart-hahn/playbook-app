@@ -1,4 +1,4 @@
 class PlaybookSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name
 end

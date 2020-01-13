@@ -1,4 +1,6 @@
 class FormationSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name
+
+  belongs_to :playbook
 end

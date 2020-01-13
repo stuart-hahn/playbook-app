@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :playbooks do
+  resources :playbooks, shallow: true do
     resources :formations do
       resources :plays
     end
